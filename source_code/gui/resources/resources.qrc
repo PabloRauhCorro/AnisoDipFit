@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/resources">
+    <file>icons/random_spectrum.PNG</file>
+    <file>icons/open_file_icon.png</file>
+    <file>icons/Param5.ico</file>
+    <file>icons/runicon2.ico</file>
+    <file>icons/spectrum_icon.jpg</file>
+    <file>icons/Spinsystem resized.jpg</file>
+    <file>icons/stop_icon.ico</file>
+    <file>icons/time icon3.ico</file>
+  </qresource>
+</RCC>

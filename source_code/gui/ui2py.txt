@@ -1,0 +1,10 @@
+1) Navigate into the directory /gui and run in the terminal:
+pyuic5-x GUIproto.ui -o temp.py
+
+2) Open temp.py and move the import-line for mplwidget from the middle to the top of the file. Then, delete the import-line for resources.qrc.
+
+3) Open the file gui/interface/setupUI.py and search for the "main_widget". Copy all properties of "main_widget" from this file into the file temp.py by replacing the default properties of "main_widget".
+
+4) Replace the function setupUI in the file gui/interface/setupUI.py by the function setupUI from the file temp.py.
+
+5) Replace the function retranslateUI in the file gui/interface/retranslateUI.py by the function retranslateUI from the file temp.py.
