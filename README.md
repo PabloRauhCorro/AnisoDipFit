@@ -3,7 +3,7 @@ AnisoDipFit Version 1.1
 
 Description
 =========
-AnisoDipFit Version 1.1 (AnisoDipFit v1.1) is an alternative version of the program AnisoDipFit that adds  a graphical user interface (GUI) to the existed console application. The original version of AnisoDipFit can be found here:
+AnisoDipFit Version 1.1 is an alternative version of the program AnisoDipFit that adds  a graphical user interface (GUI) to the existed console application. The original version of AnisoDipFit can be found here:
 https://github.com/dinarabdullin/AnisoDipFit
 
 
