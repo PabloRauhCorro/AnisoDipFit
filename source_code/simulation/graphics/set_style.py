@@ -13,4 +13,7 @@ rcParams['xtick.major.size'] = 8
 rcParams['xtick.major.width'] = 1.5
 rcParams['ytick.major.size'] = 8
 rcParams['ytick.major.width'] = 1.5
-#rcParams['font.size'] = 16
+rcParams['font.size'] = 16
+
+
+

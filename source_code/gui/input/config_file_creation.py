@@ -32,10 +32,10 @@ def dict_for_cfg(self):
     config_settings['simulation_parameters'] = {}
     config_settings['simulation_parameters']['r_mean'] = self.sim_settings['parameters']['r_mean']
     config_settings['simulation_parameters']['r_width'] = self.sim_settings['parameters']['r_width']
-    config_settings['simulation_parameters']['xi_mean'] = self.sim_settings['parameters']['xi_mean']
-    config_settings['simulation_parameters']['xi_width'] = self.sim_settings['parameters']['xi_width']
-    config_settings['simulation_parameters']['phi_mean'] = self.sim_settings['parameters']['phi_mean']
-    config_settings['simulation_parameters']['phi_width'] = self.sim_settings['parameters']['phi_width']
+    config_settings['simulation_parameters']['xi_mean'] = float(self.sim_xi_mean_line.text())
+    config_settings['simulation_parameters']['xi_width'] = float(self.sim_xi_width_line.text())
+    config_settings['simulation_parameters']['phi_mean'] = float(self.sim_phi_mean_line.text())
+    config_settings['simulation_parameters']['phi_width'] = float(self.sim_phi_width_line.text())
     config_settings['simulation_parameters']['temp'] = self.sim_settings['parameters']['temp']
 
     config_settings['simulation_settings'] = {}

@@ -24,7 +24,7 @@ def retranslateUi(self, MainWindow):
     self.label_64.setText(_translate("MainWindow", "Min time [µs]"))
     self.label_68.setStatusTip(_translate("MainWindow", "The value of the applied magnetic field used in the PDS experiment. This value has to be provided only if g selectivity is acticated."))
     self.label_68.setText(_translate("MainWindow", "Magnetic field [T]"))
-    self.magnetic_field_line.setStatusTip(_translate("MainWindow", "The value of the applied magnetic field used in the PDS experiment. This value has to be provided only if g selectivity is acticated."))
+    self.magnetic_field_line.setStatusTip(_translate("MainWindow", "The value of the applied magnetic field used in the PDS experiment. This value has to be provided only if Temperature based weights is acticated."))
     self.magnetic_field_line.setText(_translate("MainWindow", "1.1984"))
     self.mintime_line.setText(_translate("MainWindow", "0"))
     self.label_66.setText(_translate("MainWindow", "Max frequency [MHz]"))

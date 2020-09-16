@@ -1,14 +1,17 @@
-- python 3.7.3 (including modules time, sys, argparse, math, os, datetime, errno, shutil)
-- numpy 1.16.4
-- scipy 1.3.0
-- matplotlib 3.1.0
-- libconf 2.0.0
+- python 3.7.X (including modules time, sys, argparse, math, os, datetime, errno, shutil)
+- numpy
+- scipy
+- matplotlib
+- libconf
 
-To compile:
-- pyinstaller 3.4
-1) Run:
-pyinstaller --onefile main.py
-2) Edit main.spec:
-exe = EXE(..., [('W ignore', None, 'OPTION')], ...)
-3) Run:
-pyinstaller --onefile main.spec
+Compilation:
+- pyinstaller
+* Run: pyinstaller --noconsole --clean --onefile main.py
+
+GUI:
+-PyQt5
+
+GUI compilation:
+- pyinstaller
+* Run: pyinstaller --noconsole --clean --onedir --icon="gui/resources/icons/logo.ico" gui/AnisoDipFit_UI.py
+* Copy the "gui/resources" folder into the folder with the executable.

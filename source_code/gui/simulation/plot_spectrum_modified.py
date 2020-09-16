@@ -34,9 +34,11 @@ def plot_spectrum(widget, f_sim, spc_sim, f_exp, spc_exp, normalized=False, xn=[
             widget.canvas.axes.set_ylim(0, np.amax(spc_sim)+0.1)
             widget.canvas.axes.set_xlabel(r'$\nu_{dd}$ ($\nu_{0}$)')
             widget.canvas.axes.set_ylabel('Amplitude')
+
         else:
             widget.canvas.axes.plot(f_sim, spc_sim, 'k-')
-            widget.canvas.axes.set_xlim(-ranges['f_max'],ranges['f_max'])
+            if ranges['f_max']:
+                widget.canvas.axes.set_xlim(-ranges['f_max'], ranges['f_max'])
             widget.canvas.axes.set_ylim(0.0, np.amax(spc_sim)+0.1)
             widget.canvas.axes.set_xlabel(r'Frequency (MHz)')
             widget.canvas.axes.set_ylabel('Amplitude')

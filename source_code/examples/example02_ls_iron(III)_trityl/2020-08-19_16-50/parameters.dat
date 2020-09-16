@@ -1,0 +1,8 @@
+Parameter        Value            Optimized        Precision (+/-) 
+r mean (nm)      2.583            Y                nan             
+r width (nm)     0.182            Y                nan             
+xi mean (deg)    35.348           Y                nan             
+xi width (deg)   9.560            Y                nan             
+phi mean (deg)   7.264            Y                nan             
+phi width (deg)  33.534           Y                nan             
+temperature (K)  10.000           N                nan             

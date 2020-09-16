@@ -39,17 +39,23 @@ def plot_spectrum_vs_parameter_3d(f_sim, parameter, spc_vs_parameter, normalized
             else:
                 axes.plot(f_sim, parameter[i]*np.ones(f_sim.size), spc_vs_parameter[i], color=cmaplist[i])
                 axes.set_xlim(np.amin(f_sim), np.amax(f_sim))
+
         axes.set_ylim(np.amin(parameter), np.amax(parameter))      
         axes.set_zlim(0.0, np.amax(spc_vs_parameter)+0.1)
         axes.set_xlabel(r'Frequency (MHz)', labelpad=20)
         axes.set_ylabel(par_label, labelpad=20)
         axes.set_zlabel('Amplitude', labelpad=20)
+
     axes.tick_params(axis='y', which='major', pad=10)
     axes.tick_params(axis='z', which='major', pad=10)
     axes.view_init(elev=45, azim=-85)
+
     if invert_parameter_axis:
-        axes.invert_yaxis()
+        #axes.invert_yaxis()
+        axes.set_ylim(np.amax(parameter), np.amin(parameter))
+
     plt.tight_layout()
+
     plt.draw()
     plt.show(block=False)
     if save_figure:

@@ -1,5 +1,5 @@
 1) Navigate into the directory /gui and run in the terminal:
-pyuic5-x GUIproto.ui -o temp.py
+pyuic5-x AnisoDipFit.ui -o temp.py
 
 2) Open temp.py and move the import-line for mplwidget from the middle to the top of the file. Then, delete the import-line for resources.qrc.
 

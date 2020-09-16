@@ -54,7 +54,7 @@ def plot_spectrum_vs_parameter_3d( widget, f_sim, parameter, spc_vs_parameter, n
     widget.canvas.axes.tick_params(axis='z', which='major', pad=10)
     widget.canvas.axes.view_init(elev=45, azim=-85)
 
-    if invert_parameter_axis:
+    if invert_parameter_axis or True:
         #widget.canvas.axes.invert_yaxis()  #broken?
         widget.canvas.axes.set_ylim(np.amax(parameter), np.amin(parameter))
 

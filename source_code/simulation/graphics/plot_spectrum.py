@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import simulation.graphics.set_style
 
 
+
 def plot_spectrum(f_sim, spc_sim, f_exp, spc_exp, normalized=False, xn=[], ranges=[], save_figure=False, filename=''):
     fig = plt.figure(facecolor='w', edgecolor='w')
     axes = fig.gca()
@@ -30,6 +31,7 @@ def plot_spectrum(f_sim, spc_sim, f_exp, spc_exp, normalized=False, xn=[], range
             axes.set_ylim(0, np.amax(spc_sim)+0.1)
             axes.set_xlabel(r'$\nu_{dd}$ ($\nu_{0}$)')
             axes.set_ylabel('Amplitude')
+            axes.set_xticks(np.arange(round(np.amin(xn)), round(np.amax(xn) + 1), 2))
         else:
             axes.plot(f_sim, spc_sim, 'k-')
             axes.set_xlim(np.amin(f_sim), np.amax(f_sim))

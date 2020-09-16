@@ -6,6 +6,9 @@ import numpy as np
 import simulation.graphics.set_backend
 import matplotlib.pyplot as plt
 import simulation.graphics.set_style
+import sys
+
+
 
 
 def plot_spectrum_vs_theta(f_sim, spc_sim, theta, spc_vs_theta, normalized=False, xn=[], ranges=[], save_figure=False, filename=''):
@@ -17,6 +20,9 @@ def plot_spectrum_vs_theta(f_sim, spc_sim, theta, spc_vs_theta, normalized=False
         axes.set_ylim(0, np.amax(spc_sim)+0.1)
         axes.set_xlabel(r'$\nu_{dd}$ ($\nu_{0}$)')
         axes.set_ylabel('Amplitude')
+
+        axes.set_xticks(np.arange(round(np.amin(xn)), round(np.amax(xn) + 1), 2))
+
     else:
         axes.plot(f_sim, spc_sim, 'k-')
         if (ranges['f_max']):
@@ -36,6 +42,7 @@ def plot_spectrum_vs_theta(f_sim, spc_sim, theta, spc_vs_theta, normalized=False
         axes.set_ylim(np.amin(theta), np.amax(theta))
         axes.set_xlabel(r'$\nu_{dd}$ ($\nu_{0}$)')
         axes.set_ylabel(r'$\mathit{\theta}$ (degree)')
+        axes.set_xticks(np.arange(round(np.amin(xn)), round(np.amax(xn) + 1), 2))
     else:
         X, Y = np.meshgrid(f_sim, theta)
         Z = spc_vs_theta
@@ -49,6 +56,6 @@ def plot_spectrum_vs_theta(f_sim, spc_sim, theta, spc_vs_theta, normalized=False
         axes.set_ylabel(r'$\mathit{\theta}$ (degree)')
     plt.tight_layout()
     plt.draw()
-    plt.show(block=False)
+    plt.show(block=True)
     if save_figure:
         plt.savefig(filename, format='png', dpi=600)

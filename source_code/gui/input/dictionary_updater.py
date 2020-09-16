@@ -69,10 +69,10 @@ def dictionary_updater(self):
 
             self.sim_settings['parameters']['r_mean'] = float(self.sim_r_mean_line.text())
             self.sim_settings['parameters']['r_width'] = float(self.sim_r_width_line.text())
-            self.sim_settings['parameters']['xi_mean'] = float(self.sim_xi_mean_line.text())
-            self.sim_settings['parameters']['xi_width'] = float(self.sim_xi_width_line.text())
-            self.sim_settings['parameters']['phi_mean'] = float(self.sim_phi_mean_line.text())
-            self.sim_settings['parameters']['phi_width'] = float(self.sim_phi_width_line.text())
+            self.sim_settings['parameters']['xi_mean'] = const['deg2rad'] * float(self.sim_xi_mean_line.text())
+            self.sim_settings['parameters']['xi_width'] = const['deg2rad'] * float(self.sim_xi_width_line.text())
+            self.sim_settings['parameters']['phi_mean'] = const['deg2rad'] * float(self.sim_phi_mean_line.text())
+            self.sim_settings['parameters']['phi_width'] = const['deg2rad'] * float(self.sim_phi_width_line.text())
             self.sim_settings['parameters']['temp'] = float(self.sim_temp_line.text())
 
             self.sim_settings['settings']['mod_depth'] = float(self.sim_moddepth_line.text())
