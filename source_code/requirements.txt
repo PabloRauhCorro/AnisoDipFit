@@ -1,17 +1,17 @@
 - python 3.7.X (including modules time, sys, argparse, math, os, datetime, errno, shutil)
-- numpy
-- scipy
-- matplotlib
-- libconf
+- scipy 1.5.0
+- scipy 1.5.0
+- matplotlib 3.2.2
+- libconf 2.0.1
 
 Compilation:
 - pyinstaller
 * Run: pyinstaller --noconsole --clean --onefile main.py
 
 GUI:
--PyQt5
+-PyQt5 5.13.2
 
 GUI compilation:
-- pyinstaller
+- pyinstaller 4.0
 * Run: pyinstaller --noconsole --clean --onedir --icon="gui/resources/icons/logo.ico" gui/AnisoDipFit_UI.py
 * Copy the "gui/resources" folder into the folder with the executable.
